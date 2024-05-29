@@ -86,5 +86,3 @@
     </div>
 
     <!-- Content Row -->
-
-</div>
