@@ -88,4 +88,13 @@ class Data_barang extends CI_Controller
         $this->model_barang->hapus_data($where, 'tb_barang');
         redirect('admin/data_barang/index');
     }
+
+    public function detail($id_brg)
+    {
+        $data['barang'] = $this->model_barang->detail_brg_admin($id_brg);
+        $this->load->view('templates_admin/header');
+        $this->load->view('templates_admin/sidebar');
+        $this->load->view('admin/detail_barang_admin', $data);
+        $this->load->view('templates_admin/footer');
+    }
 }

@@ -19,7 +19,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?php echo base_url('dashboard') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -35,33 +35,18 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa fa-solid fa-shoe-prints"></i>
-                    <span>Sepatu Kasual</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa fa-solid fa-user-tie"></i>
-                    <span>Sepatu Formal</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa fa-solid fa-walking"></i>
-                    <span>Sepatu Sport</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?php echo base_url('kategori/sepatu_pria') ?>">
                     <i class="fas fa-solid fa-mars-stroke"></i>
                     <span>Sepatu Pria</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?php echo base_url('kategori/sepatu_wanita') ?>">
                     <i class="fa fa-solid fa-venus"></i>
                     <span>Sepatu Wanita</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-child"></i>
+                <a class="nav-link" href="<?php echo base_url('kategori/sepatu_anak_anak') ?>">
+                    <i class="fas fa-child"></i>
                     <span>Sepatu Anak</span></a>
             </li>
 

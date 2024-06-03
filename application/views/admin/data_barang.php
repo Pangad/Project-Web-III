@@ -22,7 +22,10 @@
                 <td><?php echo $brg->harga ?></td>
                 <td><?php echo $brg->stok ?></td>
                 <td>
-                    <div class="btn btn-success btn-sm"><i class="fas fa-search-plus"></i></div>
+                    <?php echo anchor(
+                        'admin/data_barang/detail/' . $brg->id_brg,
+                        '<div class="btn btn-success btn-sm"><i class="fas fa-search-plus"></i></div>'
+                    ) ?>
                 </td>
                 <td><?php echo anchor(
                     'admin/data_barang/edit/' . $brg->id_brg,
@@ -69,7 +72,11 @@
 
                     <div class="form-group">
                         <label for="">Kategori</label>
-                        <input type="text" name="kategori" class="form-control">
+                        <select class="form-control" name="kategori">
+                            <option>Sepatu Pria</option>
+                            <option>Sepatu Wanita</option>
+                            <option>Sepatu Anak-Anak</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="">Harga</label>
