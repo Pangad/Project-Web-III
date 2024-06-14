@@ -23,6 +23,10 @@
                 <label for="">Stok</label>
                 <input type="text" name="stok" class="form-control" value="<?php echo $brg->stok ?>">
             </div>
+            <div class="form-group">
+                <label for="">Gambar Produk</label><br>
+                <input type="file" name="gambar" class="form-control">
+            </div>
             <button type="submit" class="btn btn-primary btn-sm mt-3">Simpan</button>
         </form>
     <?php endforeach; ?>

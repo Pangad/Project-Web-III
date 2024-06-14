@@ -41,7 +41,7 @@
                         ) ?>
 
                         <?php echo anchor(
-                            'dashboard/index/',
+                            'welcome/',
                             '<div class="btn btn-sm btn-danger">Kembali</div>'
                         ) ?>
                     </div>
